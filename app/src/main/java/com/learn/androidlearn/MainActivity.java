@@ -8,15 +8,19 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.learn.androidlearn.activity.ButtonActivity;
+import com.learn.androidlearn.activity.DragBarActivity;
 import com.learn.androidlearn.activity.FriendsCircleActivity;
 import com.learn.androidlearn.activity.HimalayaActivity;
+import com.learn.androidlearn.activity.LogicalReasoningActivity;
 import com.learn.androidlearn.activity.LoginActivity;
 import com.learn.androidlearn.activity.QQActivity;
 import com.learn.androidlearn.activity.QQSpaceActivity;
 import com.learn.androidlearn.activity.RabbitActivity;
 import com.learn.androidlearn.activity.SoftwareUpdateActivity;
 import com.learn.androidlearn.activity.SquareActivity;
+import com.learn.androidlearn.activity.StartInterfaceActivity;
 import com.learn.androidlearn.activity.WeChatActivity;
+import com.learn.androidlearn.activity.WeChatLoginActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_qq_space;
     private Button btn_login;
     private Button btn_start;
+    private Button btn_logical_reasoning;
+    private Button btn_wechat_login;
+    private Button btn_start_interface;
+    private Button btn_dragBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +68,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_login.setOnClickListener(this);
         btn_start = (Button) findViewById(R.id.btn_start);
         btn_start.setOnClickListener(this);
+        btn_logical_reasoning = (Button) findViewById(R.id.btn_logical_reasoning);
+        btn_logical_reasoning.setOnClickListener(this);
+        btn_wechat_login = (Button) findViewById(R.id.btn_wechat_login);
+        btn_wechat_login.setOnClickListener(this);
+        btn_start_interface = (Button) findViewById(R.id.btn_start_interface);
+        btn_start_interface.setOnClickListener(this);
+        btn_dragBar = (Button) findViewById(R.id.btn_dragBar);
+        btn_dragBar.setOnClickListener(this);
     }
 
     @Override
@@ -94,6 +110,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_start:
                 startActivity(new Intent(MainActivity.this, ButtonActivity.class));
+                break;
+            case R.id.btn_logical_reasoning:
+                startActivity(new Intent(MainActivity.this, LogicalReasoningActivity.class));
+                break;
+            case R.id.btn_wechat_login:
+                startActivity(new Intent(MainActivity.this, WeChatLoginActivity.class));
+                break;
+            case R.id.btn_start_interface:
+                startActivity(new Intent(MainActivity.this, StartInterfaceActivity.class));
+                break;
+            case R.id.btn_dragBar:
+                startActivity(new Intent(MainActivity.this, DragBarActivity.class));
                 break;
         }
     }

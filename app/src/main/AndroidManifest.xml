@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ButtonActivity"></activity>
+        <activity android:name=".activity.DragBarActivity"></activity>
+        <activity android:name=".activity.StartInterfaceActivity" />
+        <activity android:name=".activity.WeChatLoginActivity" />
+        <activity android:name=".activity.LogicalReasoningActivity" />
+        <activity android:name=".activity.ButtonActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.QQSpaceActivity" />
         <activity android:name=".activity.FriendsCircleActivity" />
