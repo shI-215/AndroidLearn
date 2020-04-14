@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_mobile_rabbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="移动兔" />
+
+    <Button
+        android:id="@+id/btn_software_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="软件更新" />
+
+    <Button
+        android:id="@+id/btn_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微信" />
+
+    <Button
+        android:id="@+id/btn_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正方形" />
+
+    <Button
+        android:id="@+id/btn_himalayas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="喜马拉雅" />
+
+    <Button
+        android:id="@+id/btn_QQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QQ" />
+
+    <Button
+        android:id="@+id/btn_circle_of_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="朋友圈" />
+
+    <Button
+        android:id="@+id/btn_qq_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QQ空间" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始" />
+
+</LinearLayout>
