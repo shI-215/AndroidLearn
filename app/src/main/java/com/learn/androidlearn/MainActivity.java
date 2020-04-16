@@ -8,12 +8,16 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.learn.androidlearn.activity.ButtonActivity;
+import com.learn.androidlearn.activity.DisplayImageActivity;
 import com.learn.androidlearn.activity.DragBarActivity;
+import com.learn.androidlearn.activity.DropDownListActivity;
+import com.learn.androidlearn.activity.EvaluationActivity;
 import com.learn.androidlearn.activity.FriendsCircleActivity;
 import com.learn.androidlearn.activity.HimalayaActivity;
 import com.learn.androidlearn.activity.LogicalReasoningActivity;
 import com.learn.androidlearn.activity.LoginActivity;
 import com.learn.androidlearn.activity.QQActivity;
+import com.learn.androidlearn.activity.QQAlbumActivity;
 import com.learn.androidlearn.activity.QQSpaceActivity;
 import com.learn.androidlearn.activity.RabbitActivity;
 import com.learn.androidlearn.activity.SoftwareUpdateActivity;
@@ -38,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_wechat_login;
     private Button btn_start_interface;
     private Button btn_dragBar;
+    private Button btn_evaluate;
+    private Button btn_image_display;
+    private Button btn_qq_album;
+    private Button btn_drop_down_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,34 +56,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         btn_mobile_rabbit = (Button) findViewById(R.id.btn_mobile_rabbit);
+        btn_software_update = (Button) findViewById(R.id.btn_software_update);
+        btn_wechat = (Button) findViewById(R.id.btn_wechat);
+        btn_square = (Button) findViewById(R.id.btn_square);
+        btn_himalayas = (Button) findViewById(R.id.btn_himalayas);
+        btn_QQ = (Button) findViewById(R.id.btn_QQ);
+        btn_circle_of_friends = (Button) findViewById(R.id.btn_circle_of_friends);
+        btn_qq_space = (Button) findViewById(R.id.btn_qq_space);
+        btn_login = (Button) findViewById(R.id.btn_login);
+        btn_start = (Button) findViewById(R.id.btn_start);
+        btn_logical_reasoning = (Button) findViewById(R.id.btn_logical_reasoning);
+        btn_wechat_login = (Button) findViewById(R.id.btn_wechat_login);
+        btn_start_interface = (Button) findViewById(R.id.btn_start_interface);
+        btn_dragBar = (Button) findViewById(R.id.btn_dragBar);
+        btn_evaluate = (Button) findViewById(R.id.btn_evaluate);
+        btn_image_display = (Button) findViewById(R.id.btn_image_display);
+        btn_qq_album = (Button) findViewById(R.id.btn_qq_album);
+        btn_drop_down_list = (Button) findViewById(R.id.btn_drop_down_list);
 
         btn_mobile_rabbit.setOnClickListener(this);
-        btn_software_update = (Button) findViewById(R.id.btn_software_update);
         btn_software_update.setOnClickListener(this);
-        btn_wechat = (Button) findViewById(R.id.btn_wechat);
         btn_wechat.setOnClickListener(this);
-        btn_square = (Button) findViewById(R.id.btn_square);
         btn_square.setOnClickListener(this);
-        btn_himalayas = (Button) findViewById(R.id.btn_himalayas);
         btn_himalayas.setOnClickListener(this);
-        btn_QQ = (Button) findViewById(R.id.btn_QQ);
         btn_QQ.setOnClickListener(this);
-        btn_circle_of_friends = (Button) findViewById(R.id.btn_circle_of_friends);
         btn_circle_of_friends.setOnClickListener(this);
-        btn_qq_space = (Button) findViewById(R.id.btn_qq_space);
         btn_qq_space.setOnClickListener(this);
-        btn_login = (Button) findViewById(R.id.btn_login);
         btn_login.setOnClickListener(this);
-        btn_start = (Button) findViewById(R.id.btn_start);
         btn_start.setOnClickListener(this);
-        btn_logical_reasoning = (Button) findViewById(R.id.btn_logical_reasoning);
         btn_logical_reasoning.setOnClickListener(this);
-        btn_wechat_login = (Button) findViewById(R.id.btn_wechat_login);
         btn_wechat_login.setOnClickListener(this);
-        btn_start_interface = (Button) findViewById(R.id.btn_start_interface);
         btn_start_interface.setOnClickListener(this);
-        btn_dragBar = (Button) findViewById(R.id.btn_dragBar);
         btn_dragBar.setOnClickListener(this);
+        btn_evaluate.setOnClickListener(this);
+        btn_image_display.setOnClickListener(this);
+        btn_qq_album.setOnClickListener(this);
+        btn_drop_down_list.setOnClickListener(this);
     }
 
     @Override
@@ -122,6 +138,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_dragBar:
                 startActivity(new Intent(MainActivity.this, DragBarActivity.class));
+                break;
+            case R.id.btn_evaluate:
+                startActivity(new Intent(MainActivity.this, EvaluationActivity.class));
+                break;
+            case R.id.btn_image_display:
+                startActivity(new Intent(MainActivity.this, DisplayImageActivity.class));
+                break;
+            case R.id.btn_qq_album:
+                startActivity(new Intent(MainActivity.this, QQAlbumActivity.class));
+                break;
+            case R.id.btn_drop_down_list:
+                startActivity(new Intent(MainActivity.this, DropDownListActivity.class));
                 break;
         }
     }

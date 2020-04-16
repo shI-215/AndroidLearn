@@ -96,5 +96,29 @@
             android:layout_height="wrap_content"
             android:text="拖动条" />
 
+        <Button
+            android:id="@+id/btn_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="评价" />
+
+        <Button
+            android:id="@+id/btn_image_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图像显示" />
+
+        <Button
+            android:id="@+id/btn_qq_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QQ相册" />
+
+        <Button
+            android:id="@+id/btn_drop_down_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下拉列表" />
+
     </LinearLayout>
 </ScrollView>
