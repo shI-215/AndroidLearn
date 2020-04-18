@@ -24,6 +24,7 @@ import com.learn.androidlearn.activity.SoftwareUpdateActivity;
 import com.learn.androidlearn.activity.SquareActivity;
 import com.learn.androidlearn.activity.StartInterfaceActivity;
 import com.learn.androidlearn.activity.WeChatActivity;
+import com.learn.androidlearn.activity.WeChatAddressBookActivity;
 import com.learn.androidlearn.activity.WeChatLoginActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_image_display;
     private Button btn_qq_album;
     private Button btn_drop_down_list;
+    private Button btn_wechat_address_book;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +94,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_image_display.setOnClickListener(this);
         btn_qq_album.setOnClickListener(this);
         btn_drop_down_list.setOnClickListener(this);
+        btn_wechat_address_book = (Button) findViewById(R.id.btn_wechat_address_book);
+        btn_wechat_address_book.setOnClickListener(this);
     }
 
     @Override
@@ -150,6 +154,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_drop_down_list:
                 startActivity(new Intent(MainActivity.this, DropDownListActivity.class));
+                break;
+            case R.id.btn_wechat_address_book:
+                startActivity(new Intent(MainActivity.this, WeChatAddressBookActivity.class));
                 break;
         }
     }
